@@ -1,0 +1,8 @@
+c:\users\maxime\documents\visual studio 2012\Projects\TestFtp\bin\Debug\TestFtp.exe.config
+c:\users\maxime\documents\visual studio 2012\Projects\TestFtp\bin\Debug\TestFtp.exe
+c:\users\maxime\documents\visual studio 2012\Projects\TestFtp\bin\Debug\TestFtp.pdb
+c:\users\maxime\documents\visual studio 2012\Projects\TestFtp\bin\Debug\System.Net.FtpClient.dll
+c:\users\maxime\documents\visual studio 2012\Projects\TestFtp\bin\Debug\System.Net.FtpClient.xml
+c:\users\maxime\documents\visual studio 2012\Projects\TestFtp\obj\Debug\TestFtp.csprojResolveAssemblyReference.cache
+c:\users\maxime\documents\visual studio 2012\Projects\TestFtp\obj\Debug\TestFtp.exe
+c:\users\maxime\documents\visual studio 2012\Projects\TestFtp\obj\Debug\TestFtp.pdb
