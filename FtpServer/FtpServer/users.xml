@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User username="maxime" password="maxime" homedir="C:\Users\Maxime\Projets\FTP\maxime" />
+  <User username="manu" password="manu" homedir="C:\Users\Maxime\Projets\FTP\manu" />
+  <User username="quentin" password="quentin" homedir="C:\Users\Maxime\Projets\FTP\quentin" />
+</Users>

@@ -1,0 +1,144 @@
+﻿<Window x:Class="FtpClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FtpClient" MinHeight="600" Height="600" MinWidth="810" Width="810"
+        Background="#F2F2F2" Loaded="Window_Loaded" Closing="Window_Closing">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.7*"/>
+        </Grid.RowDefinitions>
+
+        <!-- ROW 1 -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBlock Grid.Column="0" HorizontalAlignment="Left" Text="Host :" Margin="7,0,5,0" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" TextWrapping="Wrap"  VerticalAlignment="Center" HorizontalAlignment="Stretch" 
+                     Name="btnHost" Width="100"/>
+
+            <TextBlock Grid.Column="2" HorizontalAlignment="Left" Text="Username :" Margin="7,0,5,0" VerticalAlignment="Center" />
+            <TextBox Grid.Column="3" TextWrapping="Wrap"  VerticalAlignment="Center" HorizontalAlignment="Stretch" 
+                     Name="btnUserName" Width="100"/>
+
+            <TextBlock Grid.Column="4" HorizontalAlignment="Left" Text="Password :" Margin="7,0,5,0" VerticalAlignment="Center" />
+            <PasswordBox Grid.Column="5"  VerticalAlignment="Center" HorizontalAlignment="Stretch" 
+                     Name="btnPassword" Width="100"/>
+
+            <TextBlock Grid.Column="6" HorizontalAlignment="Left" Text="Port :" Margin="7,0,5,0" VerticalAlignment="Center" />
+            <TextBox Grid.Column="7" TextWrapping="Wrap"  VerticalAlignment="Center" HorizontalAlignment="Stretch" 
+                     Name="btnPort" PreviewTextInput="btnPort_PreviewTextInput" Width="40"/>
+
+
+            <Button Grid.Column="8" Content="Connexion" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="4,1"
+                    Name="btnConnexion" Click="btnConnexion_Click" Width="70" Margin="15,0,0,0"/>
+        </StackPanel>
+
+        <!-- ROW 2 -->
+        <ListBox Name="listBoxInfos" Margin="5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  />
+        
+        <!-- ROW 3 -->
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.5*"/>
+                <ColumnDefinition Width="2.5*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid Margin="5" Grid.Row="3" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Text="Client folder :" Margin="5,0,0,0" 
+                               VerticalAlignment="Center" Grid.Column="0"/>
+                    <TextBox TextWrapping="Wrap"  VerticalAlignment="Center" IsReadOnly="True"
+                         HorizontalAlignment="Stretch" Grid.Column="1" Name="currentLocalFolder"
+                         Text="{Binding Path=SelectedItem.Tag, ElementName=LocalTree}"/>
+                </Grid>
+
+                <TreeView Name="LocalTree"  Grid.Row="1" HorizontalAlignment="Stretch"/>
+            </Grid>
+
+            <Grid Margin="5" Grid.Row="3" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Text="Server folder :" Margin="5,0,0,0" 
+                               VerticalAlignment="Center" Grid.Column="0"/>
+                    <TextBox TextWrapping="Wrap"  VerticalAlignment="Center" Name="currentServerFolder"
+                        Text="{Binding Path=SelectedItem.Tag, ElementName=ServerTree}"
+                         HorizontalAlignment="Stretch" Grid.Column="1" IsReadOnly="True"/>
+                </Grid>
+
+                <TreeView Grid.Row="1" HorizontalAlignment="Stretch" Name="ServerTree"/>
+
+            </Grid>
+        </Grid>
+
+        <!-- ROW 4 -->
+        <Grid Grid.Row="3" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.5*"/>
+                <ColumnDefinition Width="2.5*"/>
+            </Grid.ColumnDefinitions>
+            <ListView Margin="5" Grid.Row="4" Grid.Column="0" Name="LstViewLocalDetailed"
+                      Foreground="Black" MouseDoubleClick="LstViewLocalDetailedItem_Click">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Filename" DisplayMemberBinding="{Binding FileName}" Width="150"/>
+                    <GridViewColumn Header="Size" DisplayMemberBinding="{Binding Size}" Width="60"/>
+                    <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Type}" Width="60"/>
+                    <GridViewColumn Header="Last modified" DisplayMemberBinding="{Binding LastModified}" Width="130"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+            <ListView Margin="5" Grid.Row="4" Grid.Column="1" Name="LstViewServerDetailed"
+                      MouseDoubleClick="LstViewServerDetailedItem_Click">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Filename" DisplayMemberBinding="{Binding Name}" Width="150"/>
+                    <GridViewColumn Header="Size" DisplayMemberBinding="{Binding StringSize}" Width="60"/>
+                    <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Type}" Width="60"/>
+                    <GridViewColumn Header="Last modified" DisplayMemberBinding="{Binding LastModified}" Width="130"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        </Grid>
+        <!-- ROW 5 -->
+        <ListView Margin="5" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Name="listViewTransferts">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Localisation" DisplayMemberBinding="{Binding Location}" Width="200"/>
+                    <GridViewColumn Header="Transfert" Width="220">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ProgressBar Height="20" Width="200" Maximum="100" Value="{Binding PercentDone}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Destination" DisplayMemberBinding="{Binding DestinationPath}" Width="200"/>
+                    <GridViewColumn Header="Taille" Width="80" DisplayMemberBinding="{Binding Size}"/>
+                    <GridViewColumn Header="Statut" Width="80" DisplayMemberBinding="{Binding Status}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

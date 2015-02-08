@@ -1,0 +1,108 @@
+#Version: 1.0
+2015-02-01 14:48:03 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-01 14:48:03 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-01 14:48:03 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-01 14:48:03 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-01 14:48:03 127.0.0.1 - maxime PWD - 257 - - - -
+2015-02-01 14:48:47 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-01 14:48:47 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-01 14:48:47 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-01 14:48:47 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-01 14:48:47 127.0.0.1 - maxime PWD - 257 - - - -
+#Version: 1.0
+#Version: 1.0
+Stopping FtpServer
+#Version: 1.0
+2015-02-01 14:56:32 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-01 14:56:32 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-01 14:56:32 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-01 14:56:32 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-01 14:56:32 127.0.0.1 - maxime PWD - 257 - - - -
+2015-02-01 14:56:32 127.0.0.1 - maxime TYPE I 200 - - - -
+2015-02-01 14:56:32 127.0.0.1 - maxime PASV - 227 - - - 2287
+2015-02-01 14:56:32 127.0.0.1 - maxime LIST - 150 - - - -
+2015-02-01 14:56:32 127.0.0.1 - maxime LIST - 226 - - - -
+Impossible de lire les données de la connexion de transport : Une opération de blocage a été interrompue par un appel à WSACancelBlockingCall.
+Stopping FtpServer
+#Version: 1.0
+Stopping FtpServer
+#Version: 1.0
+2015-02-01 15:03:19 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-01 15:03:19 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-01 15:03:19 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-01 15:03:19 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-01 15:03:19 127.0.0.1 - maxime PWD - 257 - - - -
+2015-02-01 15:04:01 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-01 15:04:01 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-01 15:04:01 127.0.0.1 - maxime OPTS utf8 on 200 - - - -
+2015-02-01 15:04:01 127.0.0.1 - maxime PWD - 257 - - - -
+2015-02-01 15:04:01 127.0.0.1 - maxime TYPE I 200 - - - -
+2015-02-01 15:04:01 127.0.0.1 - maxime PASV - 227 - - - 2307
+2015-02-01 15:04:01 127.0.0.1 - maxime STOR /ninjaSodomite.gif 150 - - - -
+2015-02-01 15:04:01 127.0.0.1 - maxime STOR - 226 - 2060329 - -
+Impossible de lire les données de la connexion de transport : Une connexion existante a dû être fermée par l’hôte distant.
+#Version: 1.0
+2015-02-01 15:06:38 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-01 15:06:38 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-01 15:06:39 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-01 15:06:39 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-01 15:06:39 127.0.0.1 - maxime PWD - 257 - - - -
+#Version: 1.0
+2015-02-02 09:14:51 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:14:51 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-02 09:14:51 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-02 09:14:51 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-02 09:14:51 127.0.0.1 - maxime PWD - 257 - - - -
+2015-02-02 09:14:51 127.0.0.1 - maxime TYPE I 200 - - - -
+2015-02-02 09:14:51 127.0.0.1 - maxime PASV - 227 - - - 2326
+2015-02-02 09:14:51 127.0.0.1 - maxime LIST - 150 - - - -
+2015-02-02 09:14:51 127.0.0.1 - maxime LIST - 226 - - - -
+Impossible de lire les données de la connexion de transport : Une opération de blocage a été interrompue par un appel à WSACancelBlockingCall.
+Stopping FtpServer
+#Version: 1.0
+2015-02-02 09:20:20 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:20:20 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-02 09:20:20 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-02 09:20:20 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-02 09:20:20 127.0.0.1 - maxime PWD - 257 - - - -
+Stopping FtpServer
+Impossible de lire les données de la connexion de transport : Une opération de blocage a été interrompue par un appel à WSACancelBlockingCall.
+#Version: 1.0
+2015-02-02 09:25:15 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:25:15 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-02 09:25:15 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-02 09:25:15 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-02 09:25:15 127.0.0.1 - maxime PWD - 257 - - - -
+#Version: 1.0
+2015-02-02 09:32:45 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:32:45 127.0.0.1 -  AUTH SSL 502 - - - -
+#Version: 1.0
+2015-02-02 09:34:15 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:34:15 127.0.0.1 -  AUTH SSL 502 - - - -
+#Version: 1.0
+2015-02-02 09:38:44 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:38:44 127.0.0.1 -  AUTH SSL 502 - - - -
+#Version: 1.0
+2015-02-02 09:38:52 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:38:52 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-02 09:38:52 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-02 09:38:52 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-02 09:38:53 127.0.0.1 - maxime PWD - 257 - - - -
+2015-02-02 09:38:57 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:38:57 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-02 09:38:57 127.0.0.1 - maxime USER maxime 331 - - - -
+#Version: 1.0
+2015-02-02 09:39:35 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:39:35 127.0.0.1 -  AUTH SSL 502 - - - -
+#Version: 1.0
+2015-02-02 09:42:22 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 09:42:22 127.0.0.1 -  AUTH SSL 502 - - - -
+#Version: 1.0
+2015-02-02 10:24:27 127.0.0.1 -  AUTH TLS 502 - - - -
+2015-02-02 10:24:27 127.0.0.1 -  AUTH SSL 502 - - - -
+2015-02-02 10:24:27 127.0.0.1 - maxime USER maxime 331 - - - -
+2015-02-02 10:24:27 127.0.0.1 - maxime PASS ****** 230 - - - -
+2015-02-02 10:24:27 127.0.0.1 - maxime PWD - 257 - - - -
+2015-02-02 10:24:27 127.0.0.1 - maxime TYPE I 200 - - - -
+2015-02-02 10:24:27 127.0.0.1 - maxime PASV - 227 - - - 2678
+2015-02-02 10:24:27 127.0.0.1 - maxime LIST - 150 - - - -
